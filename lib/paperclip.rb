@@ -213,3 +213,6 @@ require "paperclip/io_adapters/attachment_adapter"
 require "paperclip/io_adapters/uploaded_file_adapter"
 require "paperclip/io_adapters/uri_adapter"
 require "paperclip/io_adapters/http_url_proxy_adapter"
+
+# https://github.com/thoughtbot/paperclip/issues/1924#issuecomment-740673420
+MIME::Types.add(MIME::Type.new(['application/csv', 'csv']), true)
